@@ -1,2 +1,3 @@
 # Traffic_light
 program to efficiently and effectively managing traffic system by the application of Computer Vision and AI for better Decision making regarding the passage of vehicles.
+need to install python libraries : opencv,  python, cvlib, matplotlib, tensorflow ,keras
