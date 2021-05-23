@@ -9,7 +9,7 @@ from cvlib.object_detection import draw_bbox
 #FUNCTION TO FIND THE DENSITY OF TRAFFIC IN EACH LANE
 #RETURNS A DICTIONARY
 def Find_density():
-    im1 = cv2.imread('C:/Users/user/Desktop/Traffic_light/night1.jpg')
+    im1 = cv2.imread('night1.jpg')
     assert not isinstance(im1,type(None)), 'image not found'
     dict_lane ={'lane-1':0,'lane-2':0,'lane-3':0,'lane-4':0}
 
@@ -20,7 +20,7 @@ def Find_density():
     dict_lane['lane-1'] =total
 
     #2nd image
-    im2 = cv2.imread('C:/Users/user/Desktop/Traffic_light/night2.jpeg')
+    im2 = cv2.imread('night2.jpeg')
     assert not isinstance(im2,type(None)), 'image not found'
 
     bbox, label, conf = cv.detect_common_objects(im2)
@@ -30,7 +30,7 @@ def Find_density():
     dict_lane['lane-2'] =total
 
     #3rd image
-    im3 = cv2.imread('C:/Users/user/Desktop/Traffic_light/night3.jpg')
+    im3 = cv2.imread('night3.jpg')
     assert not isinstance(im3,type(None)), 'image not found'
 
     bbox, label, conf = cv.detect_common_objects(im3)
@@ -40,7 +40,7 @@ def Find_density():
     dict_lane['lane-3'] =total
 
     #4th image
-    im4 = cv2.imread('C:/Users/user/Desktop/Traffic_light/night4.png')
+    im4 = cv2.imread('night4.png')
     assert not isinstance(im4,type(None)), 'image not found'
 
     bbox, label, conf = cv.detect_common_objects(im4)
